@@ -21,13 +21,13 @@ char **set_args(char *command)
 
 	command_copy = strdup(command);
 	token = tokenize(command, delim);
-	if (_str_cmp(token, "env") == 0)
+/*	if (_str_cmp(token, "env") == 0)
 	{
 		print_environment();
 		free(command_copy);
 		free(command);
 		return (NULL);
-	}
+	}*/
 	while (token != NULL)
 	{
 		num_token++;
